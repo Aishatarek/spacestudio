@@ -423,6 +423,7 @@ header i {
     border-width: 0px 1px 0px 1px;
     border-style: solid;
     border-color: #c7a47c;
+    padding: 0 10px ;
 }
 
 .homeSec2 h2 {
@@ -439,20 +440,19 @@ header i {
 
 .homeSec2 h2 span {
     color: #c7a47c;
-
-
 }
 
 .homeSec2 .col-md-4 h3 {
     color: white;
     margin: 10px 0;
-
 }
 
 .homeSec2 .col-md-4 p {
     color: #d4d4d4;
     font-size: 20px;
-    width: 80%;
+    width: 100%;
+    text-align: justify;
+    word-spacing: 2px;
 
 }
 
@@ -537,7 +537,7 @@ footer {
 }
 
 footer img {
-    width: 80%;
+    width: 50%;
     margin-bottom: 5px;
 
 }
@@ -563,15 +563,13 @@ footer i {
     margin: 10px 20px;
 }
 
-footer button {
+footer .fa-whatsapp {
     display: inline-block;
     border: 0.2em solid #128c7e;
     border-radius: 30px;
-    padding: 1.1em 2.2em 1.05em;
-    font-size: .875em;
+    padding: 10px;
+    font-size: 30px;
     color: #fff;
-    letter-spacing: .15em;
-    text-transform: uppercase;
     text-decoration: none;
     background-color: #128c7e;
     border: 0;
@@ -681,7 +679,8 @@ footer button {
 }
 
 .aboutsec2 .col-sm-12 {
-    padding: 20px 30px;
+    padding: 20px 30px 0px;
+    text-align: center;
 }
 
 .aboutsec2 h2 {
@@ -727,25 +726,25 @@ footer button {
     text-align: center;
     font-size: 20px;
     font-weight: 300;
-
+    text-align: justify ;
+    word-spacing: 2px;
 }
 
 .aboutsec2 p span {
     color: #c7a47c;
-
-
-}
-
-.aboutsec2 .differ p {
-    text-align: left;
 }
 
 .aboutsec2 img {
     width: 100%;
     height: 500px;
     object-fit: contain;
+    filter: grayscale(1);
+    transition: all 0.8s ease-in-out;
 }
+.aboutsec2 img:hover {
+    filter: grayscale(0);
 
+}
 /* third section (about)  */
 .aboutsec3 {
     background-color: #272727;
@@ -799,7 +798,7 @@ footer button {
     display: block;
     width: 100%;
     height: 400px;
-    object-fit: cover;
+    object-fit: contain;
 }
 
 .swiper-slide h3 {
