@@ -71,17 +71,47 @@ function imgsPrevent() {
         })
     });
 
-    swipers=document.querySelector(".swiper")
-    if(swipers){
-    swipers.addEventListener('contextmenu', function (e) {
+    swipers = document.querySelector(".swiper")
+    if (swipers) {
+        swipers.addEventListener('contextmenu', function (e) {
             e.preventDefault();
         })
     }
-    project=document.querySelector(".projectsec2")
-    if(project){
-    project.addEventListener('contextmenu', function (e) {
+    project = document.querySelector(".projectsec2")
+    if (project) {
+        project.addEventListener('contextmenu', function (e) {
             e.preventDefault();
         })
     }
 }
 imgsPrevent();
+///////////send email//////////////
+function validate() {
+    let namee = document.querySelector("#name");
+    let emaill = document.querySelector("#email");
+    let phonee = document.querySelector("#phone");
+    let companyy = document.querySelector("#company");
+    let msg = document.querySelector("#message");
+    let btn = document.querySelector("#submit");
+    if (btn) {
+        btn.addEventListener("click", (e) => {
+            e.preventDefault();
+            if (namee.value == "" || emaill.value == "" || msg.value == "") {
+                alert("fields are required")
+            } else {
+                sendmail(namee.value, emaill.value, phonee.value, companyy.value, msg.value);
+            }
+        });
+    }
+}
+validate();
+
+function sendmail(namee, emaill, phonee, companyy, msg) {
+    emailjs.send("service_1g1qoqq", "template_vlay03h", {
+        name: namee,
+        email: emaill,
+        phone: phonee,
+        company: companyy,
+        message: msg,
+    });
+}

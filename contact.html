@@ -98,17 +98,17 @@
                         <h3>Contact Us</h3>
 
                         <div>
-                            <input type="text" placeholder="Name">
-                            <input type="email" placeholder="Email*">
+                            <input type="text" placeholder="Name" id="name" name="name">
+                            <input type="email" placeholder="Email*" id="email" name="email">
                         </div>
                         <div>
-                            <input type="tel" placeholder="Phone">
-                            <input type="text" placeholder="Company">
+                            <input type="tel" placeholder="Phone" id="phone" name="phone">
+                            <input type="text" placeholder="Company" id="company" name="company">
                         </div>
                         <div>
-                            <textarea name="" cols="30" placeholder="Message"></textarea>
+                            <textarea name="" cols="30" placeholder="Message" id="message" name="message"></textarea>
                             <br>
-                            <button type="submit">send <i class="fa-solid fa-arrow-right-long"></i></button>
+                            <button type="submit" id="submit">send <i class="fa-solid fa-arrow-right-long"></i></button>
 
                         </div>
                     </form>
@@ -140,7 +140,10 @@
                             <h3 class="object-title"> United Arab Emirates
                             </h3>
                             <div class="object-content">
-                                United Arab Emirates
+                                +971 50 958 2858 <br>
+                                Dubai - Al Qusais 2nd 
+                                AbdulRaziq AlZaroni Building
+                                Office Number 227
 
                             </div>
                         </div>
@@ -167,6 +170,11 @@
                         Green Mountain El-Nasr Rd, <br>
                         Cairo, Egypt
                     </p>
+                    <p>
+                        Dubai - Al Qusais 2nd <br>
+                        AbdulRaziq AlZaroni Building <br>
+                        Office Number 227
+                    </p>
                 </div>
                 <div class="col-md-4 col-sm-12">
                     <h3>CONTACT</h3>
@@ -189,7 +197,13 @@
             </div>
         </div>
     </footer>
-
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+        (function () {
+            emailjs.init("SXvQ-gie83f2DLEWr");
+        })();
+    </script>
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
         crossorigin="anonymous"></script>
