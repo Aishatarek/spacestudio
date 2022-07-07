@@ -321,7 +321,6 @@ header i {
     display: inline-block;
     vertical-align: middle;
     background-color: transparent;
-    font-family: oswald, sans-serif;
     font-size: 1em;
     line-height: 1;
     letter-spacing: .32em;
@@ -368,7 +367,6 @@ header i {
 }
 
 .slide-title {
-    font-family: oswald, sans-serif;
     font-size: 50px;
     letter-spacing: .32em;
     text-transform: uppercase
@@ -745,6 +743,9 @@ footer .fa-whatsapp {
     filter: grayscale(0);
 
 }
+@media screen {
+    
+}
 /* third section (about)  */
 .aboutsec3 {
     background-color: #272727;
@@ -916,6 +917,7 @@ footer .fa-whatsapp {
 .modal-container .swiper-slide img {
     width: 70%;
     height: 70vh;
+    object-fit: contain;
 }
 
 .modal-container::-webkit-scrollbar {
@@ -1096,16 +1098,15 @@ footer .fa-whatsapp {
     top: 0;
     left: 0;
     margin: 0;
-    font-family: oswald, sans-serif;
     font-weight: 400;
-    font-size: 1.56em;
+    font-size: 30px;
     line-height: 1.45;
     letter-spacing: .07em;
     color: #fff;
-    text-transform: uppercase;
     -webkit-transition: all .5s;
     -o-transition: all .5s;
-    transition: all .5s
+    transition: all .5s;
+    text-align: left;
 }
 
 .project-category {
@@ -1113,7 +1114,6 @@ footer .fa-whatsapp {
     left: 0;
     bottom: 0;
     margin: 0 0 -.8em;
-    font-family: oswald, sans-serif;
     font-weight: 400;
     font-size: 14px;
     color: #fff;
