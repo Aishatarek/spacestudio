@@ -21,11 +21,9 @@ a {
     font-family: alternate;
     letter-spacing: 1px;
 }
-
-a:hover {
+a:hover{
     text-decoration: none;
 }
-
 .preloader {
     position: fixed;
     top: 0;
@@ -423,7 +421,7 @@ header i {
     border-width: 0px 1px 0px 1px;
     border-style: solid;
     border-color: #c7a47c;
-    padding: 0 10px;
+    padding: 0 10px ;
 }
 
 .homeSec2 h2 {
@@ -726,7 +724,7 @@ footer .fa-whatsapp {
     text-align: center;
     font-size: 20px;
     font-weight: 300;
-    text-align: justify;
+    text-align: justify ;
     word-spacing: 2px;
 }
 
@@ -741,14 +739,13 @@ footer .fa-whatsapp {
     filter: grayscale(1);
     transition: all 0.8s ease-in-out;
 }
-
 .aboutsec2 img:hover {
     filter: grayscale(0);
 
 }
-
-@media screen {}
-
+@media screen {
+    
+}
 /* third section (about)  */
 .aboutsec3 {
     background-color: #272727;
@@ -990,16 +987,16 @@ footer .fa-whatsapp {
     position: absolute;
     top: 15px;
     right: 15px;
-    background: var(--onyx);
     border-radius: 8px;
     width: 32px;
     height: 32px;
     display: flex;
     justify-content: center;
     align-items: center;
-    color: var(--white-2);
     font-size: 18px;
     opacity: 0.7;
+    background-color: #c5a47e;
+    z-index: 22;
 }
 
 .modal-close-btn:hover,
@@ -1342,9 +1339,8 @@ footer .fa-whatsapp {
     font-weight: 300;
     padding-right: 50px;
 }
-
 /************branding design *********************/
-.comingSoon {
+.comingSoon{
     height: 90vh;
     background-color: #222222;
     text-align: center;
@@ -1353,8 +1349,7 @@ footer .fa-whatsapp {
     background-image: url(../images/First-01.png);
     position: relative;
 }
-
-.comingSoon h3 {
+.comingSoon h3{
     font-size: 100px;
     color: #c5a47e;
     position: absolute;
@@ -1367,7 +1362,6 @@ footer .fa-whatsapp {
     justify-content: center;
     align-items: center;
 }
-
 /**************contact**************************/
 /* section 2  */
 

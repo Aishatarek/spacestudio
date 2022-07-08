@@ -35,15 +35,12 @@ for (let i = 0; i < activityItem.length; i++) {
         const next = document.querySelectorAll('.swiper-button-next');
         const prev = document.querySelectorAll('.swiper-button-prev');
 
-
         for (i = 0; i < myCustomSlider.length; i++) {
 
             myCustomSlider[i].classList.add('mySwiper-' + i);
             pagination[i].classList.add('swiper-pagination-' + i);
             next[i].classList.add('swiper-button-next-' + i);
             prev[i].classList.add('swiper-button-prev-' + i);
-
-
             new Swiper('.mySwiper-' + i, {
                 zoom: false,
                 navigation: {
