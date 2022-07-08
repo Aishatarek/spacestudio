@@ -100,6 +100,7 @@ function validate() {
                 alert("fields are required")
             } else {
                 sendmail(namee.value, emaill.value, phonee.value, companyy.value, msg.value);
+                namee.value= emaill.value= phonee.value= companyy.value= msg.value=""
             }
         });
     }
@@ -107,7 +108,7 @@ function validate() {
 validate();
 
 function sendmail(namee, emaill, phonee, companyy, msg) {
-    emailjs.send("service_1g1qoqq", "template_vlay03h", {
+    emailjs.send("service_tt5wws5", "template_dqjk68n", {
         name: namee,
         email: emaill,
         phone: phonee,
