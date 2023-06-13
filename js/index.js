@@ -31,12 +31,12 @@ function ready() {
 }
 
 const countEl = document.getElementById("count");
-countvisits();
+// countvisits();
 
-function countvisits() {
-  fetch('https://api.countapi.xyz/update/spacestudio/studio/?amount=1')
-    .then((res) => res.json())
-    .then((res) => {
-      countEl.innerHTML = res.value;
-    });
-}
+// function countvisits() {
+//   fetch('https://api.countapi.xyz/update/spacestudio/studio/?amount=1')
+//     .then((res) => res.json())
+//     .then((res) => {
+//       countEl.innerHTML = res.value;
+//     });
+// }
