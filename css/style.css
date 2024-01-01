@@ -1546,7 +1546,16 @@ footer .fa-whatsapp {
         bottom: auto
     }
 }
-
+.copyrightfooter{
+    display: flex;
+    justify-content: center;
+    margin-tp: 5px;
+}
+.copyrightfooter a{
+    color: white;
+    text-decoration: none;
+    margin-left:5px;
+}
 @media(max-height:480px) {
     .arrow-left {
         top: 43.5vmin;
